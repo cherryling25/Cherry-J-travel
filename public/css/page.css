@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    width: 1920px;
+    height: 713px;
+    background: url("../images/1.jpg");
+}
+

@@ -1,11 +1,103 @@
 * {
     margin: 0;
     padding: 0;
+    position: relative;
 }
 
-header{
-    width: 1920px;
+
+
+/*图片*/
+
+.picture .carousel {
+    max-width:100%;
     height: 713px;
-    background: url("../images/1.jpg");
+    overflow: hidden;
+    position: relative;
+
+}
+
+.picture .image_reel {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.picture .image_reel img {
+    float: left;
+}
+
+.picture .paging {
+    position: absolute;
+    bottom: 35%;
+    left: 6em;
+    display: none;
+}
+.picture .page_image1 img{
+    border-radius:30px;
+    width: 4.6em;
+    height: 4.5em;
+}
+
+.picture .page_image2 img{
+    border-radius:30px;
+    width: 4.6em;
+    height: 4.5em;
+   
+}
+
+.picture .page_image3 img{
+    border-radius:30px;
+    width: 4.6em;
+    height: 4.5em;
+}
+
+.picture .pageing span{
+    margin-left: 1em;
+    display: inline-block;
+    height: 30px;
+    
+    border:1px solid red;
+}
+.picture .container{
+    position: absolute;
+    bottom:11em;
+    left: 11em;
+    font-family: "Roboto", sans-serif; 
+}
+
+.picture .container h2{
+    font-size: 5vw;
+    color: #fff;
+    font-weight: 300;
+     
+}
+
+.picture .container p{
+    color: #fff;
+    font-size: 1.2em;
+    line-height: 2em;
+}
+
+.picture .container p span{
+    border-right:2px solid #fff;
+    padding-right:0.8em;
+    padding-left: 0.8em;
+}
+.picture .container p span:last-child{
+    border-right:none;
+}
+
+
+.two .title{
+    text-align: center;
+    margin-top: 10em;
+}
+
+.two .title .title__title{
+    margin-bottom: 2em;
+}
+
+.two .title .title__text{
+
 }
 

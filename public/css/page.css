@@ -8,6 +8,7 @@
 
 /*图片*/
 
+
 .picture .carousel {
     max-width:100%;
     height: 713px;
@@ -28,7 +29,7 @@
 
 .picture .paging {
     position: absolute;
-    bottom: 35%;
+    bottom: 36%;
     left: 6em;
     display: none;
 }
@@ -51,17 +52,14 @@
     height: 4.5em;
 }
 
-.picture .pageing span{
+.picture .paging span{
     margin-left: 1em;
     display: inline-block;
-    height: 30px;
-    
-    border:1px solid red;
 }
 .picture .container{
     position: absolute;
     bottom:11em;
-    left: 11em;
+    left: 12em;
     font-family: "Roboto", sans-serif; 
 }
 
@@ -87,17 +85,22 @@
     border-right:none;
 }
 
+.kong{
+    height: 10em;
+    background: rgb(240, 239, 239);
+}
 
-.two .title{
+.two{
+    background: rgb(240, 239, 239);
+}
+
+.two .container{
     text-align: center;
-    margin-top: 10em;
 }
 
-.two .title .title__title{
-    margin-bottom: 2em;
-}
-
-.two .title .title__text{
-
+.two .container img{
+    height: 290px;
+    max-width: 100%;
+    padding-bottom: 1.9em;
 }
 

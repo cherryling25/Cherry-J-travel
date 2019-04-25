@@ -1,4 +1,16 @@
 $(function(){
+    /*导航条 */
+    $(window).scroll(function() {
+        if($(window).scrollTop() >= 400) {
+        $(".header__logo_menu_wrap").addClass("header_fixed").slideDown();
+        } else {
+        $(".header__logo_menu_wrap").removeClass("header_fixed");
+        }
+        })
+       
+   
+
+
     $(".paging").show();
     $(".paging a:first").addClass("active");
 

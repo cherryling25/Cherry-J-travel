@@ -2,12 +2,12 @@
     margin: 0;
     padding: 0;
     position: relative;
+    font-family: "Roboto", sans-serif; 
 }
 
 
 
 /*图片*/
-
 
 .picture .carousel {
     max-width:100%;
@@ -85,13 +85,91 @@
     border-right:none;
 }
 
-.kong{
-    height: 10em;
-    background: rgb(240, 239, 239);
+.header__logo_menu_wrap{
+    position: fixed;
+    top: 100px;
+    width: 100%;
+    height: 100px;
+
 }
 
+.header_fixed{
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    background: #333;
+    width: 100%;
+    height: 100px;
+    background-color:rgba(0,0,0,0.8);
+}
+
+.header__logo{
+    left: 110px;
+    top: 25px;
+}
+
+.header__menu{
+    position: absolute;
+    left: 360px;
+    top: 2.4em;
+}
+
+.onepage-nav .onepage-menu li a {
+    text-decoration:none;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top:0.2em;
+    
+    
+}
+.current-menu-item a{
+    background: pink;
+    display: inline-block;
+    height: 2em;
+    border-radius: 2em;
+}
+
+
+.onepage-nav .onepage-menu a:hover{
+    background: pink;
+    display: inline-block;
+    height: 2em;
+    border-radius: 2em;
+}
+
+.onepage-nav ul {
+    list-style: none;
+}
+
+.onepage-nav .onepage-menu > li {
+    display: inline-block;
+}
+
+.box-share_wrap{
+    width: 50px;
+    height: 200px;
+    background: red;
+    position: fixed;
+    top: 260px;
+    right: 0;
+    z-index: 4;
+}
+
+.kong{
+    height: 10em;
+    background: rgb(247, 245, 245);
+}
+
+.kong1{
+    height: 5em;
+    background: rgb(247, 245, 245);
+}
 .two{
-    background: rgb(240, 239, 239);
+    background: rgb(247, 245, 245);
 }
 
 .two .container{
@@ -103,4 +181,27 @@
     max-width: 100%;
     padding-bottom: 1.9em;
 }
+
+.three h2{
+    margin-top: 3em;
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 64px;
+}
+
+.three .container img{
+    max-width: 100%;
+    height: 550px;
+    padding-bottom: 1.9em;
+    margin-top: 2.5em;
+}
+
+.md-btn--pill {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+
 

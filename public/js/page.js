@@ -59,4 +59,13 @@ $(function(){
     }, function() {
         rotateSwitch();     //  鼠标移走，重新开始rotateSwitch方法
     });
+
+
+    $(".photoGraph").hover(function() {
+        $(this).find('img').css({transform: 'scale(1.08)'});
+        $(this).find(".box-image__info").stop().slideUp('slow');
+    }, function() {
+        $(this).find('img').css({transform: 'scale(1)'});
+        $(this).find(".box-image__info").stop().slideDown('slow');
+    })
 }) 

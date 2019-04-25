@@ -176,12 +176,6 @@
     text-align: center;
 }
 
-.two .container img{
-    height: 290px;
-    max-width: 100%;
-    padding-bottom: 1.9em;
-}
-
 .three h2{
     margin-top: 3em;
     font-size: 48px;
@@ -202,6 +196,32 @@
     font-weight: bold;
 }
 
+.photoGraph{
+    overflow: hidden;
+    margin: 10px auto;
+    margin-left: 20px;
+    height: 290px;
+    width: 270px!important;
+    padding : 0!important;
+    
+}
 
+.photoGraph img{
+    transition: all 0.5s;
+    height: 290px;
+    width: 270px;
+}
+
+.box-image__info{
+    background: #000;
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 290px;
+    color: #fff;
+   
+}
 
 

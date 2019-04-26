@@ -4,11 +4,45 @@ $(function(){
         if($(window).scrollTop() >= 400) {
         $(".header__logo_menu_wrap").addClass("header_fixed").slideDown();
         } else {
-        $(".header__logo_menu_wrap").removeClass("header_fixed");
+        $(".header__logo_menu_wrap").removeClass("header_fixed").css({"transition": "all 0.3s"});
         }
         })
        
-   
+   /*返回顶部 */
+        $(window).scroll(function() {
+            $(".scrollTop").show();
+            if ($(window).scrollTop()<=100) {
+                $(".scrollTop").hide();
+            }
+
+        });
+        $(".scrollTop").click(function(event) {
+            //$(window).scrollTop(0);
+            var that = $(this);
+            $('html,body').animate({scrollTop: '0px'}, 700,function (){
+                    that.hide();
+                });      
+        });
+
+
+     // .two 图片放大
+     $(".photoGraph").hover(function() {
+        $(this).find('img').css({transform: 'scale(1.08)'});
+        $(this).find(".box-image__info").stop().slideUp('slow');
+    }, function() {
+        $(this).find('img').css({transform: 'scale(1)'});
+        $(this).find(".box-image__info").stop().slideDown('slow');
+    })
+
+    //幻灯片的左侧
+    $(".aj").hover(function() {
+        $(this).find('.page_image').css({transform: 'scale(1.2)' ,"transition": "all 0.5s"});
+       
+    }, function() {
+        $(this).find('.page_image').css({transform: 'scale(1)'});
+       
+    })
+
 
 
     $(".paging").show();
@@ -61,11 +95,5 @@ $(function(){
     });
 
 
-    $(".photoGraph").hover(function() {
-        $(this).find('img').css({transform: 'scale(1.08)'});
-        $(this).find(".box-image__info").stop().slideUp('slow');
-    }, function() {
-        $(this).find('img').css({transform: 'scale(1)'});
-        $(this).find(".box-image__info").stop().slideDown('slow');
-    })
+   
 }) 

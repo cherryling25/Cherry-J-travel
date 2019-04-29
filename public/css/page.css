@@ -48,6 +48,7 @@
     left: 6em;
     display: none;
 }
+
 .picture .page_image img{
     border-radius:30px;
     width: 4.6em;
@@ -94,6 +95,7 @@
     padding-right:0.8em;
     padding-left: 0.8em;
 }
+
 .picture .container p span:last-child{
     border-right:none;
 }

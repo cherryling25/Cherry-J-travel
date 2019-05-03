@@ -26,12 +26,21 @@ $(function(){
 
 
      // .two 图片放大
-     $(".photoGraph").hover(function() {
+     $(".two .photoGraph").hover(function() {
         $(this).find('img').css({transform: 'scale(1.08)'});
         $(this).find(".box-image__info").stop().slideUp('slow');
     }, function() {
         $(this).find('img').css({transform: 'scale(1)'});
         $(this).find(".box-image__info").stop().slideDown('slow');
+    })
+
+
+    $(".three .photoGraph").hover(function() {
+        $(this).find('img').css({transform: 'scale(1.08)'});
+        $(this).find(".box-image__info").stop();
+    }, function() {
+        $(this).find('img').css({transform: 'scale(1)'});
+        $(this).find(".box-image__info").stop();
     })
 
     //幻灯片的左侧
@@ -43,7 +52,7 @@ $(function(){
        
     })
 
-
+    
 
     $(".paging").show();
     $(".paging a:first").addClass("active");

@@ -250,19 +250,71 @@
     
 }
 
-.three h2{
-    margin-top: 3em;
-    font-size: 3.5em;
+
+
+.three .photoGraph{
+    overflow: hidden;
+    margin: 10px auto;
+    margin-left: 20px;
+    height: 550px;
+    width: 370px!important;
+    padding : 0!important;
+    
+}
+
+.three .photoGraph img{
+    transition: all 0.8s;
+    height: 550px;
+    width: 370px;
+}
+
+.three .box-image__info{
+    background: #000;
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 550px;
+    color: #fff;
+    
+}
+
+.three .box-image__info h3{
+    
+    top: -1em;
+    left: 1.3em;
+    font-size: 1.3em;
     font-weight: 300;
     line-height: 64px;
 }
 
-.three .container img{
-    max-width: 100%;
-    height: 550px;
-    padding-bottom: 1.9em;
-    margin-top: 2.5em;
+.three .box-image__info p{
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 100;
+    
+    top: 0;
+    left: 1em;
 }
+
+.three .box-image__info span{
+    font-size: 1.2em;
+    font-weight: bold;
+    top: 18em;
+    left: 1.3em;
+}
+
+.three .box-image__info a{
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 400;
+    top: 16.7em;
+    left: 14em;
+}
+
+
+
 
 .md-btn--pill {
     text-transform: uppercase;

@@ -3,6 +3,7 @@
     padding: 0;
     position: relative;
     font-family: "Roboto", sans-serif; 
+    cursor: pointer;
 }
 
 .scrollTop{
@@ -39,7 +40,9 @@
 }
 
 .picture .image_reel img {
+    float: left;
     width: 1440px;
+    filter: brightness(80%);
 }
 
 .picture .paging {
@@ -69,13 +72,13 @@
 .picture .paging span{
     margin-left: 1em;
     display: inline-block;
+    color: #fff;
 }
 
 .picture .container{
     position: absolute;
     bottom:11em;
     left: 12em;
-    
 }
 
 .picture .container h2{
@@ -141,7 +144,7 @@
     text-decoration:none;
     font-size: 1.1em;
     color: #fff;
-    font-weight: 500;
+    font-weight: 700;
     letter-spacing: 0.06em;
     padding-left: 1em;
     padding-right: 1em;
@@ -162,6 +165,7 @@
     display: inline-block;
     height: 2em;
     border-radius: 2em;
+    transition: all 0.5s;
 }
 
 .onepage-nav ul {

@@ -115,7 +115,7 @@
     top: 100px;
     width: 100%;
     height: 100px;
-
+    
 }
 
 .header_fixed{
@@ -130,8 +130,14 @@
 }
 
 .header__logo{
-    left: 110px;
-    top: 25px;
+    left: 220px;
+    top: 15px;
+    
+}
+
+.header__logo img{
+    border-radius: 50%;
+    filter: brightness(140%);
 }
 
 .header__menu{
@@ -245,7 +251,7 @@
     bottom: 0;
     height: 290px;
     color: #fff;
-   
+    
 }
 
 .two .box-image__info h4{

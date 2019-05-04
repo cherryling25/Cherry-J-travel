@@ -40,6 +40,7 @@
 
 .picture .image_reel img {
     float: left;
+    width: 1440px;
 }
 
 .picture .paging {

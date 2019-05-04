@@ -29,8 +29,8 @@
     height: 713px;
     overflow: hidden;
     position: relative;
-
-}ƒ
+   
+}
 
 .picture .image_reel {
     position: absolute;
@@ -39,7 +39,6 @@
 }
 
 .picture .image_reel img {
-    float: left;
     width: 1440px;
 }
 
@@ -59,11 +58,12 @@
 
 .picture .aj .spanborder{
     background:  #fff;
-    width: 50px;
+    width: 60px;
     height: 2px;
     position: absolute;
-    left: -98px;
+    left: -90px;
     top: 25px;
+    display: none;
 }
 
 .picture .paging span{
@@ -75,7 +75,7 @@
     position: absolute;
     bottom:11em;
     left: 12em;
-    font-family: "Roboto", sans-serif; 
+    
 }
 
 .picture .container h2{
@@ -99,6 +99,12 @@
 
 .picture .container p span:last-child{
     border-right:none;
+}
+
+
+.picture .pagehover{
+    transform: scale(1.2);
+    transition: all 0.5s;
 }
 
 .header__logo_menu_wrap{

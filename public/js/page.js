@@ -43,19 +43,11 @@ $(function(){
         $(this).find(".box-image__info").stop();
     })
 
-    //幻灯片的左侧
-    $(".aj").hover(function() {
-        $(this).find('.page_image').css({transform: 'scale(1.2)' ,"transition": "all 0.5s"});
-       
-    }, function() {
-        $(this).find('.page_image').css({transform: 'scale(1)'});
-       
-    })
-
     
-
+    // 幻灯片
     $(".paging").show();
-    $(".page_image:first").addClass("active");
+    $(".page_image:first").addClass("pagehover");
+    $(".page_image:first span:first").show();
 
     //获取图像的大小,有多少图像，然后确定图像的大小
      var imageWidth = $(".window").width();   
@@ -68,8 +60,13 @@ $(function(){
     rotate = function(){
         var triggerID = $active.attr("rel")-1;  //获得滑动的次数
         var image_reelPosition = triggerID*imageWidth;  //确定图像卷需要滑动的距离
-        $(".page_image").removeClass("active");   //删除所有active类
-        $active.addClass("active"); //正在显示的分页增加active类
+        
+        $(".page_image").removeClass("pagehover");   //删除所有active类
+        $active.addClass("pagehover"); //正在显示的分页增加active类
+        
+        $(".page_image .spanborder").hide();
+        $active.find(".spanborder").show();
+
         $(".image_reel").animate({  //滑动动画
             left: -image_reelPosition 
         }, 500);
@@ -78,9 +75,7 @@ $(function(){
     //On Click
     $(".page_image").click(function() {
        $active = $(this);
-       
        rotate();        //立即触发rotate函数
-       
        return false;    //以防定时器是a链接，浏览器会跳转到链接
     });
 

@@ -58,6 +58,11 @@
     height: 4.5em;
 }
 
+.picture .page_image img:hover{
+    transform: scale(1.2);
+    transition: all 0.3s;
+}
+
 
 .picture .aj .spanborder{
     background:  #fff;
@@ -252,6 +257,16 @@
     height: 290px;
     color: #fff;
     
+}
+
+.photoGraph .more{
+    position: absolute;
+    top: 7em;
+    left: 6em;
+    color: #fff;
+    font-size: 1.3em;
+    background: #7bd0fa;
+    border-radius: 20%;
 }
 
 .two .box-image__info h4{

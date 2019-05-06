@@ -135,7 +135,7 @@
 }
 
 .header__logo{
-    left: 220px;
+    left: 360px;
     top: 15px;
     
 }
@@ -147,7 +147,7 @@
 
 .header__menu{
     position: absolute;
-    left: 360px;
+    left: 520px;
     top: 2.4em;
 }
 
@@ -213,7 +213,7 @@
 }
 
 .kong{
-    height: 10em;
+    height: 8em;
     background: rgb(247, 245, 245);
 }
 
@@ -294,6 +294,13 @@
 }
 
 
+.three{
+    margin-top: 100px;
+}
+
+.three .container{
+    text-align: center;
+}
 
 .three .photoGraph{
     overflow: hidden;

@@ -212,6 +212,11 @@
     font-size: 20px;
 }
 
+.box-share_wrap .social-icon img{
+    width: 40px;
+    height: 40px;
+}
+
 .box-share_wrap .social-icon:hover{
     background: #fff;
     color: #bd1e2d;
@@ -370,15 +375,36 @@
 
 
 
+#aboutMe{
+    background-color: #deeef7;
+    /*background: url("../images/1.jpg");
+    filter: brightness(80%);*/
+    height: 500px;
+}
 
-.md-btn--pill {
-    text-transform: uppercase;
-    font-size: 16px;
+#aboutMe h2{
+    letter-spacing:0.1em;
     font-weight: bold;
 }
 
-.butt{
-    margin-top: 3em;
+#aboutMe h3{
+    text-transform:uppercase;
+    color: gray;
+    font-size: 1em;
 }
 
+#aboutMe{
+    margin-top: 5em;
 
+}
+
+#aboutMe img{
+    border-radius: 50%;
+}
+
+.footer p{
+    background: #f2f2f2;
+    padding: 24px 0;
+    color: gray;
+    margin-bottom: 0;
+}

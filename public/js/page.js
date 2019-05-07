@@ -8,7 +8,16 @@ $(function(){
         $(".header__logo_menu_wrap").removeClass("header_fixed").css({"transition": "all 0.3s"});
         }
         })
+     
        
+       $(".onepage-menu a").click(function(){
+           
+            $(this).addClass("color");
+           
+            $(".onepage-menu a").not($(this)).removeClass("color");
+       });
+
+
    /*返回顶部 */
         $(window).scroll(function() {
             $(".scrollTop").show();

@@ -170,14 +170,19 @@
     border-radius: 2em;
 }
 
-
-.onepage-nav .onepage-menu a:hover{
+.color{
     background: pink;
+    color: #fff;
     display: inline-block;
     height: 2em;
     border-radius: 2em;
-    transition: all 0.5s;
 }
+
+/*.onepage-nav .onepage-menu a:hover{
+    
+    
+    transition: all 0.3s;
+}*/
 
 .onepage-nav ul {
     list-style: none;

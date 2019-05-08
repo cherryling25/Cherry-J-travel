@@ -25,7 +25,7 @@
 
 /*图片*/
 
-.picture .carousel {
+#picture .carousel {
     max-width:100%;
     height: 713px;
     overflow: hidden;
@@ -33,38 +33,38 @@
    
 }
 
-.picture .image_reel {
+#picture .image_reel {
     position: absolute;
     left: 0;
     top: 0;
 }
 
-.picture .image_reel img {
+#picture .image_reel img {
     float: left;
     width: 1440px;
     filter: brightness(80%);
 }
 
-.picture .paging {
+#picture .paging {
     position: absolute;
     bottom: 36%;
     left: 6em;
     display: none;
 }
 
-.picture .page_image img{
+#picture .page_image img{
     border-radius:30px;
     width: 4.6em;
     height: 4.5em;
 }
 
-.picture .page_image img:hover{
+#picture .page_image img:hover{
     transform: scale(1.2);
     transition: all 0.3s;
 }
 
 
-.picture .aj .spanborder{
+#picture .aj .spanborder{
     background:  #fff;
     width: 60px;
     height: 2px;
@@ -74,43 +74,43 @@
     display: none;
 }
 
-.picture .paging span{
+#picture .paging span{
     margin-left: 1em;
     display: inline-block;
     color: #fff;
 }
 
-.picture .container{
+#picture .container{
     position: absolute;
     bottom:11em;
     left: 12em;
 }
 
-.picture .container h2{
+#picture .container h2{
     font-size: 5vw;
     color: #fff;
     font-weight: 300;
      
 }
 
-.picture .container p{
+#picture .container p{
     color: #fff;
     font-size: 1.2em;
     line-height: 2em;
 }
 
-.picture .container p span{
+#picture .container p span{
     border-right:2px solid #fff;
     padding-right:0.8em;
     padding-left: 0.8em;
 }
 
-.picture .container p span:last-child{
+#picture .container p span:last-child{
     border-right:none;
 }
 
 
-.picture .pagehover{
+#picture .pagehover{
     transform: scale(1.2);
     transition: all 0.5s;
 }
@@ -192,35 +192,7 @@
     display: inline-block;
 }
 
-.box-share_wrap{
-    width: 50px;
-    height: 200px;
-    background: #bd1e2d;
-    position: fixed;
-    top: 260px;
-    right: 0;
-    z-index: 4;
-}
 
-.box-share_wrap .social-icon {
-    color: #fff;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-    margin: 0;
-    display: block;
-    font-size: 20px;
-}
-
-.box-share_wrap .social-icon img{
-    width: 40px;
-    height: 40px;
-}
-
-.box-share_wrap .social-icon:hover{
-    background: #fff;
-    color: #bd1e2d;
-}
 
 .kong{
     height: 8em;
@@ -377,13 +349,11 @@
 
 #aboutMe{
     background-color: #deeef7;
-    /*background: url("../images/1.jpg");
-    filter: brightness(80%);*/
     height: 500px;
 }
 
 #aboutMe h2{
-    letter-spacing:0.1em;
+    
     font-weight: bold;
 }
 
@@ -400,11 +370,31 @@
 
 #aboutMe img{
     border-radius: 50%;
+    margin-top: 2em;
 }
 
 .footer p{
     background: #f2f2f2;
-    padding: 24px 0;
+    padding: 15px 0;
     color: gray;
     margin-bottom: 0;
+}
+
+.box-share_wrap  {
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.box-share_wrap .container img{
+    width: 160px;
+    height: 140px;
+    margin-left: 3em;
+}
+
+.box-share_wrap .container span{
+    position: absolute;
+    color: rgb(255, 0, 106);
+    bottom: 0.1em;
+    
+    
 }

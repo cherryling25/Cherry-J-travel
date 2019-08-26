@@ -1,5 +1,5 @@
 $(function(){
-
+ 
     /*导航条 */
     $(window).scroll(function() {
         if($(window).scrollTop() >= 400) {
